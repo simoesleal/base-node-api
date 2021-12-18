@@ -1,0 +1,32 @@
+{
+  "name": "base-node-api",
+  "version": "1.0.0",
+  "description": "A base node api to use as start project sample.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simoesleal/base-node-api.git"
+  },
+  "keywords": [
+    "node",
+    "api",
+    "tdd"
+  ],
+  "author": "Antonio Simões Leal Neto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simoesleal/base-node-api/issues"
+  },
+  "homepage": "https://github.com/simoesleal/base-node-api#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5",
+    "supertest": "^6.1.6"
+  }
+}

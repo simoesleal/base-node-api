@@ -4,7 +4,7 @@
   "description": "A base node api to use as start project sample.",
   "main": "app.js",
   "scripts": {
-    "dev": "node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon src",
     "test": "jest"
   },
   "repository": {
@@ -26,7 +26,39 @@
     "express": "^4.17.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.4.5",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
     "supertest": "^6.1.6"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "env": {
+      "commonjs": true,
+      "es2020": true,
+      "node": true,
+      "jest/globals": true
+    },
+    "rules": {
+      "eqeqeq": "warn"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 80
   }
 }
